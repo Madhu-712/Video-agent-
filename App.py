@@ -16,7 +16,9 @@ from tempfile import NamedTemporaryFile
 from constants import SYSTEM_PROMPT, INSTRUCTIONS
 
 # Configuration: Replace with your actual API keys
-os.environ['GOOGLE_API_KEY'] = st.secrets.get('GEMINI_KEY') # Use st.secrets.get() for safety
+os.environ['GOOGLE_API_KEY'] = st.secrets['GEMINI_KEY']
+
+
 @st.cache_resource
 def initialize_agent():
     return Agent(
