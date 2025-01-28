@@ -7,7 +7,8 @@ from io import BytesIO
 import time
 from pathlib import Path
 from google.generativeai import upload_file,get_file
-import google.generativeai as genaiimport tempfile
+import google.generativeai as genai
+import tempfile
 from phi.agent import Agent
 from phi.model.google import Gemini
 from phi.tools.duckduckgo import DuckDuckGo
