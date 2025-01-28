@@ -1,7 +1,7 @@
 
 import streamlit as st
 import os
-import tavily
+
 from PIL import Image
 from io import BytesIO
 import time
