@@ -17,7 +17,12 @@ from constants import SYSTEM_PROMPT, INSTRUCTIONS
 
 # Configuration: Replace with your actual API keys
 os.environ['GOOGLE_API_KEY'] = st.secrets['GEMINI_KEY']
-
+# Page configuration
+st.set_page_config(
+    page_title="Multimodal AI Agent- Video Summarizer",
+    page_icon="🎥",
+    layout="wide"
+)
 
 @st.cache_resource
 def initialize_agent():
@@ -103,10 +108,5 @@ st.markdown(
 
 
 if __name__ == "__main__":
-    st.set_page_config(
-        page_title="Video analysis and Summarizer Agent ",
-        page_icon="🎥",
-        layout="wide",
-        initial_sidebar_state="collapsed"
-    )
+    
     main()
