@@ -88,7 +88,7 @@ else:
     st.info("Upload a video file to begin analysis.")
 
 # Customize text area height
-   st.markdown(
+st.markdown(
      """
      <style>
      .stTextArea textarea {
@@ -97,7 +97,7 @@ else:
      </style>
     """,
      unsafe_allow_html=True
-    )
+)
 
 
 if __name__ == "__main__":
